@@ -23,6 +23,22 @@
               <xsl:value-of select="foaf:homepage/@rdf:resource"/>
             </a>
           </p>
+
+          <xsl:if test="foaf:knows">
+            <p><strong>Knows:</strong></p>
+            <ul>
+              <xsl:for-each select="foaf:knows">
+                <xsl:variable name="knownPerson" select="foaf:Person[@rdf:about=current()/@rdf:resource]"/>
+                <li>
+                  <a href="{foaf:homepage/@rdf:resource}">
+                    <xsl:value-of select="$knownPerson/foaf:firstName"/>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="$knownPerson/foaf:familyName"/>
+                  </a>
+                </li>
+              </xsl:for-each>
+            </ul>
+          </xsl:if>
         </xsl:for-each>
       </body>
     </html>
