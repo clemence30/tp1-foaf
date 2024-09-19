@@ -9,7 +9,13 @@
         <foaf:firstName>Clem</foaf:firstName>
         <foaf:familyName>Per</foaf:familyName>  
         <foaf:homepage rdf:resource="index.html"/>
-        <foaf:knows rdf:resource="https://www.fcnantes.com/groupepro/20222023/fiche.php?numjoueur=187#popupCookies"/>
-        <foaf:knows rdf:resource="https://www.fcnantes.com/groupepro/20232024/fiche.php?numjoueur=381"/>
+        <foaf:knows>
+            <foaf:name>Nicolas Pallois</foaf:name>
+            <foaf:homepage rdf:resource="https://www.fcnantes.com/groupepro/20222023/fiche.php?numjoueur=187#popupCookies"/>
+        </foaf:knows>
+        <foaf:knows>
+            <foaf:name>Florent Mollet</foaf:name>
+            <foaf:homepage rdf:resource="https://www.fcnantes.com/groupepro/20232024/fiche.php?numjoueur=381"/>
+        </foaf:knows>
     </foaf:Person>
 </rdf:RDF>
