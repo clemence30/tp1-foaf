@@ -5,9 +5,9 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:foaf="http://xmlns.com/foaf/0.1/">
 
-    <foaf:Person rdf:about="#cleper" xmlns:foaf="http://xmlns.com/foaf/0.1/"> 
+    <foaf:Person> 
         <foaf:firstName>Clem</foaf:firstName>
         <foaf:familyName>Per</foaf:familyName>  
-        <foaf:homepage rdf:resource="https://github.com/clemence30"/>
+        <foaf:homepage rdf:resource="index.html"/>
     </foaf:Person>
 </rdf:RDF>
