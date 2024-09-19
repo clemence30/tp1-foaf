@@ -1,21 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="foaf.xsl"?>
+
 <rdf:RDF
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:foaf="http://xmlns.com/foaf/0.1/">
 
-    <foaf:Person> 
+    <!-- Définition de Clem Per -->
+    <foaf:Person rdf:about="#clem">
         <foaf:firstName>Clem</foaf:firstName>
         <foaf:familyName>Per</foaf:familyName>  
         <foaf:homepage rdf:resource="index.html"/>
-        <foaf:knows>
-            <foaf:name>Nicolas Pallois</foaf:name>
-            <foaf:homepage rdf:resource="https://www.fcnantes.com/groupepro/20222023/fiche.php?numjoueur=187#popupCookies"/>
-        </foaf:knows>
-        <foaf:knows>
-            <foaf:name>Florent Mollet</foaf:name>
-            <foaf:homepage rdf:resource="https://www.fcnantes.com/groupepro/20232024/fiche.php?numjoueur=381"/>
-        </foaf:knows>
+        <foaf:knows rdf:resource="#nicolas"/>
+        <foaf:knows rdf:resource="#florent"/>
     </foaf:Person>
+
+    <!-- Définition de Nicolas Pallois -->
+    <foaf:Person rdf:about="#nicolas">
+        <foaf:firstName>Nicolas</foaf:firstName>
+        <foaf:familyName>Pallois</foaf:familyName>
+        <foaf:homepage rdf:resource="https://www.fcnantes.com/groupepro/20222023/fiche.php?numjoueur=187#popupCookies"/>
+    </foaf:Person>
+
+    <!-- Définition de Florent Mollet -->
+    <foaf:Person rdf:about="#florent">
+        <foaf:firstName>Florent</foaf:firstName>
+        <foaf:familyName>Mollet</foaf:familyName>
+        <foaf:homepage rdf:resource="https://www.fcnantes.com/groupepro/20232024/fiche.php?numjoueur=381"/>
+    </foaf:Person>
+
 </rdf:RDF>
