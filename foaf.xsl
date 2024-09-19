@@ -4,6 +4,18 @@
                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
+    <xsl:template match="/">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <head>
+                <title>Profil FOAF de Clem Per</title>
+            </head>
+            <body>
+                <h1>Profil FOAF de Clem Per</h1>
+                <xsl:apply-templates select="rdf:RDF/foaf:Person"/>
+            </body>
+        </html>
+    </xsl:template>
+
     <xsl:template match="foaf:Person">
         <div class="person">
             <h2>
